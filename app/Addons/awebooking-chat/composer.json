@@ -1,0 +1,16 @@
+{
+    "require": {
+        "stichoza/google-translate-php": "^3.2",
+        "guzzlehttp/guzzle": "^6.0"
+    },
+    "autoload": {
+        "files": ["./vendor-static/guzzlehttp/guzzle/src/functions_include.php",
+            "./vendor-static/guzzlehttp/psr7/src/functions_include.php",
+            "./vendor-static/guzzlehttp/promises/src/functions_include.php"],
+        "psr-4": {
+            "GuzzleHttp6\\": "./vendor-static/guzzlehttp/guzzle/src/",
+            "GuzzleHttp6\\Psr7\\": "./vendor-static/guzzlehttp/psr7/src/",
+            "GuzzleHttp6\\Promise\\": "./vendor-static/guzzlehttp/promises/src/"
+        }
+    }
+}

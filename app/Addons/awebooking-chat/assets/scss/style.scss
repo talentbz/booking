@@ -1,0 +1,186 @@
+.relative {
+    position: relative;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 50%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -32px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #a6a2ec;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
+}
+
+.hh-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9;
+    display: none;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-size: 13px;
+
+    &:empty {
+        display: none;
+    }
+}
+
+.text-description {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #8C8C8C;
+    font-style: italic;
+}
+
+.notification-icon .nav-link {
+    position: relative;
+
+    .badge {
+        position: absolute;
+        top: 8px;
+        right: 0px;
+        padding: 3px 5px;
+        background: #e34c4c;
+        border-radius: 10px;
+        color: #FFF;
+        font-size: 10px;
+    }
+}
+
+.message{
+    .message-content {
+        border-radius: 0;
+
+        a {
+            color: #8094ae;
+            text-decoration: underline;
+        }
+    }
+    &.self{
+        .message-content {
+            a {
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.chat-content-render {
+    @media(min-width: 1200px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.message .avatar {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    margin-top: 0;
+    box-shadow: none;
+
+    img {
+        box-shadow: none;
+    }
+}
+
+.message .message-content {
+    margin-left: 0;
+}
+
+.message.self .message-content {
+    margin-right: 0;
+}
+
+.sidebar-sub-header {
+
+}
+
+.emojionearea .emojionearea-picker {
+    overflow: hidden;
+}
+
+.main-layout .navigation .logo {
+    background: transparent !important;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+.form-translator{
+    .appnavbar-body{
+        overflow: unset !important;
+    }
+    .button-language-wrapper{
+        .dropdown-menu{
+            transform: translate(0, 37px) !important;
+        }
+    }
+}
+

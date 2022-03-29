@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.luxurycroatiaretreats.app",
+               "sha256_cert_fingerprints": ["14:6E:DC:83:7C:63:A6:39:5E:05:58:00:81:8E:53:CE:E4:74:81:E6:29:A9:E7:93:01:0D:48:29:B3:C3:9B:BD"] }
+}]
